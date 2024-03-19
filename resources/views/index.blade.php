@@ -22,8 +22,8 @@
                             <img src="{{asset('assets/img/hero/me.png')}}" alt="">
                         </div>
 
-                        <p class="lead">I break down complex user experinece
-                            problems to create integritiy focussed solutions that connect billions of people</p>
+                        <p class="lead">French student in Web Development specialized in Laravel, I blend passion and
+                            expertise to craft captivating and intuitive web experiences</p>
                         <div class="button-box d-flex flex-wrap align-items-center">
                             <ul class="ul-reset social-icons">
                                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -35,35 +35,23 @@
                 </div>
                 <div class="col-md-6 d-none d-md-block">
                     <div class="hero-image-box text-center">
-                        <img src="{{asset('assets/img/hero/me.png')}}" alt="">
+                        <img src="{{asset('assets/img/hero/me.png')}}" alt="Hugo Mayonobe">
                     </div>
                 </div>
             </div>
 
             <div class="funfact-area">
-                <div class="row">
+                <div class="row d-flex justify-content-center">
                     <div class="col-6 col-lg-3">
                         <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
-                            <div class="number"><span class="odometer" data-count="14">0</span></div>
+                            <div class="number"><span class="odometer" data-count="5">0</span></div>
                             <div class="text">Years of <br>Experience</div>
                         </div>
                     </div>
                     <div class="col-6 col-lg-3">
                         <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
-                            <div class="number"><span class="odometer" data-count="50">0</span>+</div>
+                            <div class="number"><span class="odometer" data-count="40">0</span>+</div>
                             <div class="text">Project <br>Completed</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
-                            <div class="number"><span class="odometer" data-count="1.5">0</span>K</div>
-                            <div class="text">Happy <br>Clients</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
-                            <div class="number"><span class="odometer" data-count="14">0</span></div>
-                            <div class="text">Years of <br>Experience</div>
                         </div>
                     </div>
                 </div>

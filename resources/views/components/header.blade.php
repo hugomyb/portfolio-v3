@@ -6,7 +6,7 @@
 
                 <div class="logo-box">
                     <a href="{{ route('home') }}">
-                        <img src="{{asset('assets/img/logo/logo.png')}}" alt="Logo Hugo Mayonobe">
+                        <img class="logo" src="{{asset('assets/img/logo/logo.png')}}" alt="Logo Hugo Mayonobe">
                     </a>
                 </div>
 
@@ -30,7 +30,7 @@
                     <a href="#" class="btn tj-btn-primary">Contact me !</a>
                 </div>
 
-                <div class="header-button" id="toggle-theme">
+                <div class="header-button toggle-theme">
                     <i class="fal fa-sun-bright fa-xl" style="display: none;"></i>
                     <i class="fal fa-moon fa-xl"></i>
                 </div>
@@ -54,13 +54,13 @@
 
                 <div class="logo-box">
                     <a href="{{ route('home') }}">
-                        <img src="{{asset('assets/img/logo/logo.png')}}" alt="">
+                        <img class="logo" src="{{asset('assets/img/logo/logo.png')}}" alt="">
                     </a>
                 </div>
 
                 <div class="header-info-list d-none d-md-inline-block">
                     <ul class="ul-reset">
-                        <li><a href="mailto:mail@gerolddesign.com">mail@gerolddesign.com</a></li>
+                        <li><a href="mailto:hugomayonobe@gmail.com">hugomayonobe@gmail.com</a></li>
                     </ul>
                 </div>
 
@@ -76,6 +76,11 @@
 
                 <div class="header-button">
                     <a href="#" class="btn tj-btn-primary">Contact me !</a>
+                </div>
+
+                <div class="header-button toggle-theme">
+                    <i class="fal fa-sun-bright fa-xl" style="display: none;"></i>
+                    <i class="fal fa-moon fa-xl"></i>
                 </div>
 
                 <div class="menu-bar d-lg-none">
