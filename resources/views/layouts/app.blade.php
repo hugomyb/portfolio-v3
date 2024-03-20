@@ -9,8 +9,8 @@
 
     <title>{{ isset($title) ? "$title - Hugo Mayonobe" : "Hugo Mayonobe" }}</title>
 
-    <link rel="apple-touch-icon" href="{{ asset('assets/img/favicon.png') }}" />
-    <link rel="shortcut icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}" />
+    <link rel="apple-touch-icon" href="{{ asset('assets/img/logo/logo.png') }}" />
+    <link rel="shortcut icon" type="image/png" href="{{ asset('assets/img/logo/logo.png') }}" />
 
     <!-- CSS here -->
     @include('partials.styles')

@@ -42,16 +42,22 @@
 
             <div class="funfact-area">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-6 col-lg-3">
+                    <div class="col-4 col-lg-3">
                         <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
                             <div class="number"><span class="odometer" data-count="5">0</span></div>
                             <div class="text">Years of <br>Experience</div>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-3">
+                    <div class="col-4 col-lg-3">
                         <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
                             <div class="number"><span class="odometer" data-count="40">0</span>+</div>
                             <div class="text">Project <br>Completed</div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-3">
+                        <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
+                            <div class="number"><span class="odometer" data-count="1">0</span></div>
+                            <div class="text">Open-Source <br>Project Contribution</div>
                         </div>
                     </div>
                 </div>
