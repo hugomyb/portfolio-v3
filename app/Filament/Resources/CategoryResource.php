@@ -2,45 +2,38 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\SkillResource\Pages;
-use App\Filament\Resources\SkillResource\RelationManagers;
-use App\Models\Skill;
+use App\Filament\Resources\CategoryResource\Pages;
+use App\Filament\Resources\CategoryResource\RelationManagers;
+use App\Models\Category;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 
-class SkillResource extends Resource
+class CategoryResource extends Resource
 {
-    protected static ?string $model = Skill::class;
+    protected static ?string $model = Category::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-fire';
+    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    protected static ?string $navigationGroup = 'Administration';
+    protected static ?string $modelLabel = 'Category';
 
-    protected static ?string $modelLabel = 'Skill';
+    protected static ?string $navigationGroup = 'Projets';
 
     protected static ?string $recordTitleAttribute = 'name';
 
-    protected static ?int $navigationSort = 6;
+    protected static ?int $navigationSort = 2;
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\Fieldset::make('Skill')
-                    ->columns(1)
+                Forms\Components\Fieldset::make('Categorie')
                     ->schema([
                         Forms\Components\TextInput::make('name')
+                            ->columnSpanFull()
                             ->label('Nom')
-                            ->required()
-                            ->maxLength(255),
-                        Forms\Components\FileUpload::make('logo')
-                            ->label('Logo')
-                            ->acceptedFileTypes(['image/svg+xml', 'image/png'])
-                            ->imageEditor()
-                            ->previewable()
                             ->required(),
                     ]),
             ]);
@@ -53,11 +46,13 @@ class SkillResource extends Resource
                 Tables\Columns\TextColumn::make('name')
                     ->label('Nom')
                     ->searchable(),
-                Tables\Columns\ImageColumn::make('logo')
-                    ->label('Logo')
+
+                Tables\Columns\TextColumn::make('projects_count')
+                    ->counts('projects')
+                    ->label('Projets')
+                    ->badge()
+                    ->sortable()
             ])
-            ->reorderable('order')
-            ->defaultSort('order')
             ->filters([
                 //
             ])
@@ -81,9 +76,9 @@ class SkillResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListSkills::route('/'),
-            'create' => Pages\CreateSkill::route('/create'),
-            'edit' => Pages\EditSkill::route('/{record}/edit'),
+            'index' => Pages\ListCategories::route('/'),
+            'create' => Pages\CreateCategory::route('/create'),
+            'edit' => Pages\EditCategory::route('/{record}/edit'),
         ];
     }
 }

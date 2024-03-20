@@ -22,6 +22,10 @@ class EducationResource extends Resource
 
     protected static ?string $modelLabel = 'Éducation';
 
+    protected static ?string $recordTitleAttribute = 'title';
+
+    protected static ?int $navigationSort = 4;
+
     public static function form(Form $form): Form
     {
         return $form
