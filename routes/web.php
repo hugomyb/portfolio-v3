@@ -19,5 +19,5 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/projets/{project}', function (Project $project) {
-    return view('pages.project', ['project' => $project]);
+    return view('project', ['project' => $project]);
 })->name('project');

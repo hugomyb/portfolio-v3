@@ -30,10 +30,7 @@
                     <a href="#" class="btn tj-btn-primary">Contact me !</a>
                 </div>
 
-                <div class="header-button toggle-theme">
-                    <i class="fal fa-sun-bright fa-xl" style="display: none;"></i>
-                    <i class="fal fa-moon fa-xl"></i>
-                </div>
+                @include('components.theme-switcher')
 
                 <div class="menu-bar d-lg-none">
                     <button>
@@ -78,10 +75,7 @@
                     <a href="#" class="btn tj-btn-primary">Contact me !</a>
                 </div>
 
-                <div class="header-button toggle-theme">
-                    <i class="fal fa-sun-bright fa-xl" style="display: none;"></i>
-                    <i class="fal fa-moon fa-xl"></i>
-                </div>
+                @include('components.theme-switcher')
 
                 <div class="menu-bar d-lg-none">
                     <button>
