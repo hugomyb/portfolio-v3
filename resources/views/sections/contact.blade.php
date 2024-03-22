@@ -40,17 +40,6 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form_group">
-                                        <select name="conService" id="conService" class="tj-nice-select">
-                                            <option value="" selected disabled>Choose Service</option>
-                                            <option value="braning">Branding Design</option>
-                                            <option value="web">Web Design</option>
-                                            <option value="uxui">UI/UX Design</option>
-                                            <option value="app">App Design</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form_group">
                                                 <textarea name="conMessage" id="conMessage"
                                                           placeholder="Message"></textarea>
                                     </div>

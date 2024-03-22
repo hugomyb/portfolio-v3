@@ -124,143 +124,109 @@
             smartSpeed: 1000,
             autoplayTimeout: 3000,
         });
+    });
 
+    $(window).on("load", function () {
         /*------------------------------------------------------
-      /  Nice Select
+      /  WoW Js
       /------------------------------------------------------*/
-        $("select").niceSelect();
-
-        /*------------------------------------------------------
-      /  ALL Popup
-      /------------------------------------------------------*/
-        //     if ($(".popup_video").length > 0) {
-        //         $(`.popup_video`).lightcase({
-        //             transition: "elastic",
-        //             showSequenceInfo: false,
-        //             slideshow: false,
-        //             swipe: true,
-        //             showTitle: false,
-        //             showCaption: false,
-        //             controls: true,
-        //         });
-        //     }
-        //
-        //     $(".modal-popup").magnificPopup({
-        //         type: "inline",
-        //         fixedContentPos: false,
-        //         fixedBgPos: true,
-        //         overflowY: "auto",
-        //         closeBtnInside: true,
-        //         preloader: false,
-        //         midClick: true,
-        //         removalDelay: 300,
-        //         mainClass: "popup-mfp",
-        //     });
-        // });
-
-        $(window).on("load", function () {
-            /*------------------------------------------------------
-          /  WoW Js
-          /------------------------------------------------------*/
-            var wow = new WOW({
-                boxClass: "wow", // default
-                animateClass: "animated", // default
-                offset: 100, // default
-                mobile: true, // default
-                live: true, // default
-            });
-            wow.init();
-
-            /*------------------------------------------------------
-          /  Preloader
-          /------------------------------------------------------*/
-            const svg = document.getElementById("preloaderSvg");
-            const svgText = document.querySelector(
-                ".hero-section .intro_text svg text"
-            );
-            const tl = gsap.timeline({
-                onComplete: startStrokeAnimation,
-            });
-            const curve = "M0 502S175 272 500 272s500 230 500 230V0H0Z";
-            const flat = "M0 2S175 1 500 1s500 1 500 1V0H0Z";
-
-            tl.to(".preloader-heading .load-text , .preloader-heading .cont", {
-                delay: 1.5,
-                y: -100,
-                opacity: 0,
-            });
-            tl.to(svg, {
-                duration: 0.5,
-                attr: {d: curve},
-                ease: "power2.easeIn",
-            }).to(svg, {
-                duration: 0.5,
-                attr: {d: flat},
-                ease: "power2.easeOut",
-            });
-            tl.to(".preloader", {
-                y: -1500,
-            });
-            tl.to(".preloader", {
-                zIndex: -1,
-                display: "none",
-            });
-
-            function startStrokeAnimation() {
-                // Add a class or directly apply styles to trigger the stroke animation
-                svgText.classList.add("animate-stroke");
-            }
-
-            /*------------------------------------------------------
-          /  Services Hover BG
-          /------------------------------------------------------*/
-            function service_animation() {
-                var active_bg = $(".services-widget .active-bg");
-                var element = $(".services-widget .current");
-                $(".services-widget .service-item").on("mouseenter", function () {
-                    var e = $(this);
-                    activeService(active_bg, e);
-                });
-                $(".services-widget").on("mouseleave", function () {
-                    element = $(".services-widget .current");
-                    activeService(active_bg, element);
-                    element.closest(".service-item").siblings().removeClass("mleave");
-                });
-                activeService(active_bg, element);
-            }
-
-            service_animation();
-
-            function activeService(active_bg, e) {
-                if (!e.length) {
-                    return false;
-                }
-                var topOff = e.offset().top;
-                var height = e.outerHeight();
-                var menuTop = $(".services-widget").offset().top;
-                e.closest(".service-item").removeClass("mleave");
-                e.closest(".service-item").siblings().addClass("mleave");
-                active_bg.css({top: topOff - menuTop + "px", height: height + "px"});
-            }
-
-            $(".services-widget .service-item").on("click", function () {
-                $(".services-widget .service-item").removeClass("current");
-                $(this).addClass("current");
-            });
-
-            /*------------------------------------------------------
-          /  Funfact
-          /------------------------------------------------------*/
-            if ($(".odometer").length > 0) {
-                $(".odometer").appear(function () {
-                    var odo = $(".odometer");
-                    odo.each(function () {
-                        var countNumber = $(this).attr("data-count");
-                        $(this).html(countNumber);
-                    });
-                });
-            }
-
+        var wow = new WOW({
+            boxClass: "wow", // default
+            animateClass: "animated", // default
+            offset: 100, // default
+            mobile: true, // default
+            live: true, // default
         });
+        wow.init();
+
+        /*------------------------------------------------------
+      /  Preloader
+      /------------------------------------------------------*/
+        const svg = document.getElementById("preloaderSvg");
+        const svgText = document.querySelector(
+            ".hero-section .intro_text svg text"
+        );
+        const tl = gsap.timeline({
+            onComplete: startStrokeAnimation,
+        });
+        const curve = "M0 502S175 272 500 272s500 230 500 230V0H0Z";
+        const flat = "M0 2S175 1 500 1s500 1 500 1V0H0Z";
+
+        tl.to(".preloader-heading .load-text , .preloader-heading .cont", {
+            delay: 1.5,
+            y: -100,
+            opacity: 0,
+        });
+        tl.to(svg, {
+            duration: 0.5,
+            attr: {d: curve},
+            ease: "power2.easeIn",
+        }).to(svg, {
+            duration: 0.5,
+            attr: {d: flat},
+            ease: "power2.easeOut",
+        });
+        tl.to(".preloader", {
+            y: -1500,
+        });
+        tl.to(".preloader", {
+            zIndex: -1,
+            display: "none",
+        });
+
+        function startStrokeAnimation() {
+            svgText.classList.add("animate-stroke");
+        }
+
+        /*------------------------------------------------------
+      /  Services Hover BG
+      /------------------------------------------------------*/
+        function service_animation() {
+            var active_bg = $(".services-widget .active-bg");
+            var element = $(".services-widget .current");
+            $(".services-widget .service-item").on("mouseenter", function () {
+                var e = $(this);
+                activeService(active_bg, e);
+            });
+            $(".services-widget").on("mouseleave", function () {
+                element = $(".services-widget .current");
+                activeService(active_bg, element);
+                element.closest(".service-item").siblings().removeClass("mleave");
+            });
+            activeService(active_bg, element);
+        }
+
+        service_animation();
+
+        function activeService(active_bg, e) {
+            if (!e.length) {
+                return false;
+            }
+            var topOff = e.offset().top;
+            var height = e.outerHeight();
+            var menuTop = $(".services-widget").offset().top;
+            e.closest(".service-item").removeClass("mleave");
+            e.closest(".service-item").siblings().addClass("mleave");
+            active_bg.css({top: topOff - menuTop + "px", height: height + "px"});
+        }
+
+        $(".services-widget .service-item").on("click", function () {
+            $(".services-widget .service-item").removeClass("current");
+            $(this).addClass("current");
+        });
+
+        /*------------------------------------------------------
+      /  Funfact
+      /------------------------------------------------------*/
+        if ($(".odometer").length > 0) {
+            $(".odometer").appear(function () {
+                var odo = $(".odometer");
+                odo.each(function () {
+                    var countNumber = $(this).attr("data-count");
+                    $(this).html(countNumber);
+                });
+            });
+        }
+
     });
 })(jQuery);
