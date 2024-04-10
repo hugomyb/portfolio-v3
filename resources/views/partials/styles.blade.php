@@ -1,4 +1,7 @@
+@vite(['resources/css/app.css','resources/js/app.js'])
+
 @livewireStyles
+
 <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/font-awesome-pro.min.css')}}">

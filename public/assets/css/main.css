@@ -4003,3 +4003,9 @@ body.absolute_header .breadcrumb_area {
 .tag-bubble:hover img {
     transform: scale(0.9);
 }
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
