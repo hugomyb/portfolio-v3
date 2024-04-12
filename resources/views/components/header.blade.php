@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="header-button">
-                    <a href="#" class="btn tj-btn-primary">Contact me !</a>
+                    <a href="#contact-section" class="btn tj-btn-primary">Contact me !</a>
                 </div>
 
                 @include('components.theme-switcher')

@@ -4,29 +4,35 @@ namespace App\Livewire;
 
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Validation\Rule;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
+use RyanChandler\LaravelCloudflareTurnstile\View\Components\Turnstile;
 
 class ContactForm extends Component
 {
-    #[Validate('required')]
     public $firstname = '';
 
-    #[Validate('required')]
     public $lastname = '';
 
-    #[Validate('required|email')]
     public $email = '';
 
-    #[Validate(['nullable', 'regex:/^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/'])]
     public $phone = '';
 
-    #[Validate('required|min:5')]
     public $message = '';
+
+    public $turnstile;
 
     public function sendEmail(): void
     {
-        $this->validate();
+        $this->validate([
+            'firstname' => 'required',
+            'lastname' => 'required',
+            'email' => 'required|email',
+            'phone' => ['nullable', 'regex:/^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/'],
+            'message' => 'required|min:5',
+            'turnstile' => ['required', Rule::turnstile()]
+        ]);
 
         Mail::to('hugomayonobe@gmail.com')->send(new ContactMail([
             'firstname' => $this->firstname,
@@ -36,6 +42,7 @@ class ContactForm extends Component
             'message' => $this->message,
         ]));
 
+        $this->dispatch('message-sent');
         $this->reset();
     }
 

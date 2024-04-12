@@ -1646,6 +1646,8 @@ body.loaded {
     text-align: center;
     max-height: 670px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .popup_modal_img img {
@@ -4008,4 +4010,11 @@ body.absolute_header .breadcrumb_area {
     color: red;
     font-size: 14px;
     margin-top: 5px;
+}
+
+#message_sent {
+    z-index: 999;
+    position: fixed;
+    top: 120px;
+    right: 30px;
 }

@@ -12,6 +12,8 @@
     <link rel="apple-touch-icon" href="{{ asset('assets/img/logo/logo.png') }}" />
     <link rel="shortcut icon" type="image/png" href="{{ asset('assets/img/logo/logo.png') }}" />
 
+    @turnstileScripts()
+
     <!-- CSS here -->
     @include('partials.styles')
 

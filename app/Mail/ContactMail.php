@@ -24,7 +24,7 @@ class ContactMail extends Mailable
 
     public function build()
     {
-        return $this->subject('Contact via Portfolio' . ' - ' . $this->details['name'] . ' - ' . $this->details['subject'])
+        return $this->subject('Contact via Portfolio' . ' - ' . $this->details['firstname'] . ' ' . $this->details['lastname'])
             ->markdown('emails.contact')
             ->with(['details' => $this->details]);
     }

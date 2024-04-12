@@ -9,11 +9,9 @@
                 <div class="footer-menu">
                     <nav>
                         <ul>
-                            <li><a href="#services-section">Services</a></li>
                             <li><a href="#works-section">Works</a></li>
                             <li><a href="#resume-section">Resume</a></li>
                             <li><a href="#skills-section">Skills</a></li>
-                            <li><a href="#testimonials-section">Testimonials</a></li>
                             <li><a href="#contact-section">Contact</a></li>
                         </ul>
                     </nav>
