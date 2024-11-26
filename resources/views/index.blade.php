@@ -26,9 +26,9 @@
                             expertise to craft captivating and intuitive web experiences</p>
                         <div class="button-box d-flex flex-wrap align-items-center">
                             <ul class="ul-reset social-icons">
-                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                                <li><a target="_blank" href="https://x.com/hugo_mynb"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/hugo-mayonobe/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a target="_blank" href="https://github.com/hugomyb"><i class="fa-brands fa-github"></i></a></li>
                             </ul>
                         </div>
                     </div>
