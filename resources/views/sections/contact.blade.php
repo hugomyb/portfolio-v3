@@ -1,5 +1,5 @@
 <!-- CONTACT SECTION START -->
-<section class="contact-section" id="contact-section">
+<section class="contact" id="contact">
     <div class="container">
         <div class="row">
             @livewire('contact-form')

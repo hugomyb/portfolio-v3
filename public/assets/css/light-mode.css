@@ -175,7 +175,7 @@ body.light-mode {
 *  START: Resume Section
 * ===============================
 */
-.light-mode .resume-section {
+.light-mode .resume {
 	background: var(--tj-off-white);
 }
 .light-mode .resume-widget .resume-item {
@@ -198,7 +198,7 @@ body.light-mode {
 *  START: Skills Section
 * ===============================
 */
-.light-mode .skills-section {
+.light-mode .skills {
 	background: var(--tj-white);
 }
 .light-mode .skills-widget .skill-inner {
@@ -249,7 +249,7 @@ body.light-mode {
 *  START: Contact Section
 * ===============================
 */
-.light-mode .contact-section {
+.light-mode .contact {
 	background: var(--tj-off-white);
 }
 .light-mode .contact-form-box {

@@ -1957,13 +1957,13 @@ body.loaded {
 *  START: Resume Section
 * ===============================
 */
-.resume-section {
+.resume {
     padding-top: 120px;
     padding-bottom: 90px;
     background: var(--tj-black-2);
 }
 
-.resume-section .resume-item {
+.resume .resume-item {
     margin-right: 100px;
 }
 
@@ -2030,13 +2030,13 @@ body.loaded {
 *  START: Skills Section
 * ===============================
 */
-.skills-section {
+.skills {
     padding-top: 120px;
     padding-bottom: 120px;
     background: var(--tj-theme-accent-1);
 }
 
-.skills-section .section-header {
+.skills .section-header {
     margin-left: auto;
     margin-right: auto;
 }
@@ -3135,7 +3135,7 @@ input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]),
 *  START: Contact Section
 * ===============================
 */
-.contact-section {
+.contact {
     padding-top: 120px;
     padding-bottom: 120px;
     background: var(--tj-black-2);

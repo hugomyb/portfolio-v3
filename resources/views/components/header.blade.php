@@ -19,15 +19,15 @@
                 <div class="header-menu">
                     <nav>
                         <ul>
-                            <li><a href="#works-section">Works</a></li>
-                            <li><a href="#resume-section">Resume</a></li>
-                            <li><a href="#skills-section">Skills</a></li>
+                            <li><a href="{{ route('home') }}#works">Works</a></li>
+                            <li><a href="{{ route('home') }}#resume">Resume</a></li>
+                            <li><a href="{{ route('home') }}#skills">Skills</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="header-button">
-                    <a href="#contact-section" class="btn tj-btn-primary">Contact me !</a>
+                    <a href="#contact" class="btn tj-btn-primary">Contact me !</a>
                 </div>
 
                 @include('components.theme-switcher')
@@ -64,9 +64,9 @@
                 <div class="header-menu">
                     <nav>
                         <ul>
-                            <li><a href="#works-section">Works</a></li>
-                            <li><a href="#resume-section">Resume</a></li>
-                            <li><a href="#skills-section">Skills</a></li>
+                            <li><a href="{{ route('home') }}#works">Works</a></li>
+                            <li><a href="{{ route('home') }}#resume">Resume</a></li>
+                            <li><a href="{{ route('home') }}#skills">Skills</a></li>
                         </ul>
                     </nav>
                 </div>

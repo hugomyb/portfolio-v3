@@ -9,10 +9,10 @@
                 <div class="footer-menu">
                     <nav>
                         <ul>
-                            <li><a href="#works-section">Works</a></li>
-                            <li><a href="#resume-section">Resume</a></li>
-                            <li><a href="#skills-section">Skills</a></li>
-                            <li><a href="#contact-section">Contact</a></li>
+                            <li><a href="{{ route('home') }}#works">Works</a></li>
+                            <li><a href="{{ route('home') }}#resume">Resume</a></li>
+                            <li><a href="{{ route('home') }}#skills">Skills</a></li>
+                            <li><a href="{{ route('home') }}#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>

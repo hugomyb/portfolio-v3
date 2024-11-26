@@ -1,5 +1,5 @@
 <!-- SKILLS SECTION START -->
-<section class="skills-section" id="skills-section">
+<section class="skills" id="skills">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

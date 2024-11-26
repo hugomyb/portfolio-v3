@@ -1,5 +1,5 @@
 <!-- RESUME SECTION START -->
-<section class="resume-section" id="resume-section">
+<section class="resume" id="resume">
     <div class="container">
         <div class="row">
             <div class="col-md-6">

@@ -1,5 +1,5 @@
 <!-- PORTFOLIO SECTION START -->
-<section class="portfolio-section" id="works-section">
+<section class="portfolio-section" id="works">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
